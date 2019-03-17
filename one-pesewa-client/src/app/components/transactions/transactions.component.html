@@ -20,10 +20,10 @@
 			<td>
 				<div class="expense-icons list-item" *ngIf="transaction.transaction_status">
 
-					<a class="edit-icon mx-2" (click)="onEdit(transaction.transaction_id)" >
+					<a class="edit-icon mx-2" (click)="onEdit(transaction.transaction_id)" style="color: #05668d;">
 						<i class="fas fa-edit"></i>
 					</a>
-					<a class="delete-icon" (click)="onDelete(transaction.id, transaction.transaction_title)" >
+					<a class="delete-icon" (click)="onDelete(transaction.id, transaction.transaction_title)" style="color: #b80c09;" >
 						<i class="fas fa-trash"></i>
 					</a>
 				</div>

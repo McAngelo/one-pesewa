@@ -26,11 +26,11 @@ export class TransactionsComponent implements OnInit {
 		//const  params = new  HttpParams({fromString:  '_page=1&_limit=1'});
 		this._httpClient.get<TransactionModel[]>("http://localhost:3000/transactions")
 		.subscribe(data  => {
-			console.log("GET Request is successful ", data);
+			//console.log("GET Request is successful ", data);
 			this.transactions = data;
 		},
 		error  => {
-			console.log("Error", error);
+			console.error("Error", error);
 		});
 	}
 
@@ -39,7 +39,7 @@ export class TransactionsComponent implements OnInit {
 	}
 
 	onDelete(id:string, title:string){
-		console.log("You are about to delete ", id);
+		//console.log("You are about to delete ", id);
 		const self = this;
 
 	    Swal.fire({
@@ -61,10 +61,10 @@ export class TransactionsComponent implements OnInit {
 	delete(id:string){
 		this._httpClient.patch(`http://127.0.0.1:3000/transactions/${id}`,{ "transaction_status":  false })
 		.subscribe(data  => {
-			console.log("Record deleted successful ", data);
+			//console.log("Record deleted successful ", data);
 			window.location.reload();
 		},error  => {
-			console.log("Error", error);
+			console.error("Error", error);
 		});
 	}
 

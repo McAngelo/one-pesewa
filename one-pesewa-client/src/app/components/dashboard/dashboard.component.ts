@@ -43,7 +43,7 @@ export class DashboardComponent implements OnInit {
         const self = this;
         this._httpClient.get<TransactionModel[]>("http://localhost:3000/transactions")
         .subscribe(data  => {
-            console.log("GET Request is successful ", data);
+            //console.log("GET Request is successful ", data);
             //this.transactions = data;
             data.forEach(function(obj){
                 if(obj.transaction_status && obj.transaction_type === 'credit'){
@@ -59,7 +59,7 @@ export class DashboardComponent implements OnInit {
             this.balance = this.calculateBalance(self.total_income, self.total_expense);
         },
         error  => {
-            console.log("Error", error);
+            console.error("Error", error);
         });
   	}
 
