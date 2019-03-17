@@ -9,52 +9,21 @@
 		</tr>
 	</thead>
 	<tbody>
-		<tr>
-			<td scope="row">{{ currentDate | date : 'medium' }}</td>
-			<td class="text-center" ><span class="badge badge-success">Credit</span></td>
-			<td>Salary paid</td>
-			<td>Otto</td>
-			<td>
-				<div class="expense-icons list-item">
-
-					<a href="#" class="edit-icon mx-2" data-id="${expense.id}">
-						<i class="fas fa-edit"></i>
-					</a>
-					<a href="#" class="delete-icon" data-id="${expense.id}">
-						<i class="fas fa-trash"></i>
-					</a>
-				</div>
+		<tr *ngFor="let transaction of transactions">
+			<td scope="row">{{ transaction.transaction_date_created | date : 'medium' }}</td>
+			<td class="text-center" >
+				<span class="badge badge-success" *ngIf="transaction.transaction_type === 'credit'">Credit</span>
+				<span class="badge badge-danger" *ngIf="transaction.transaction_type === 'debit'">Debit</span>
 			</td>
-		</tr>
-		<tr>
-			<td scope="row">{{ currentDate | date : 'medium' }}</td>
-			<td class="text-center" ><span class="badge badge-danger">Debit</span></td>
-			<td>Fix gate</td>
-			<td>Thornton</td>
+			<td>{{ transaction.transaction_title }}</td>
+			<td>{{ transaction.amount | currency: 'GHS ' }}</td>
 			<td>
 				<div class="expense-icons list-item">
 
-					<a href="#" class="edit-icon mx-2" data-id="${expense.id}">
+					<a class="edit-icon mx-2" (click)="onEdit(transaction.transaction_id)" >
 						<i class="fas fa-edit"></i>
 					</a>
-					<a href="#" class="delete-icon" data-id="${expense.id}">
-						<i class="fas fa-trash"></i>
-					</a>
-				</div>
-			</td>
-		</tr>
-		<tr>
-			<td scope="row">{{ currentDate | date : 'medium' }}</td>
-			<td class="text-center" ><span class="badge badge-success">Credit</span></td>
-			<td>Side gig</td>
-			<td>the Bird</td>
-			<td>
-				<div class="expense-icons list-item">
-
-					<a href="#" class="edit-icon mx-2" data-id="${expense.id}">
-						<i class="fas fa-edit"></i>
-					</a>
-					<a href="#" class="delete-icon" data-id="${expense.id}">
+					<a class="delete-icon" (click)="onDelete(transaction.transaction_id)" >
 						<i class="fas fa-trash"></i>
 					</a>
 				</div>

@@ -1,15 +1,38 @@
 <!-- expense feedback -->
-<div class="expense-feedback alert alert-danger text-capitalize">expense feedback</div>
+<div class="expense-feedback alert alert-danger text-capitalize" [ngClass]="{ 'showItem': formError }">{{ formErrorMessage }}</div>
 <!-- expense form -->
-<form id="expense-form" class=" expense-form">
-	<h5 class="text-capitalize">please enter your expense</h5>
+<form id="expense-form" class=" expense-form" (ngSubmit)="incomeForm.form.valid && onSubmit()" #incomeForm="ngForm">
+	<h5 class="text-capitalize">Enter your expense</h5>
 	<div class="form-group">
-		<input type="text" class="form-control expense-input" id="expense-input">
+		<input type="text" 
+        	   placeholder="Purpose for Expense " 
+				class="form-control expense-input" 
+				[(ngModel)]="model.transaction_title"
+               #transaction_title="ngModel"
+               name="transaction_title"
+               required >
+        <div *ngIf="incomeForm.submitted && !transaction_title.valid" class="error">expense purpose is required</div>
 	</div>
-	<h5 class="text-capitalize">please enter expense amount</h5>
 	<div class="form-group">
-		<input type="number" class="form-control expense-input" id="amount-input">
+		<input type="number" 
+        	   placeholder="Expense amount" 
+				class="form-control expense-input" 
+				[(ngModel)]="model.amount"
+               #amount="ngModel"
+               name="amount"
+               required >
+        <div *ngIf="incomeForm.submitted && !amount.valid" class="error">expense amount is required</div>
 	</div>
+    <div class="form-group">
+    	<textarea type="text"
+                  class="form-control  expense-input"
+                  placeholder="expense description"
+        	   	  [(ngModel)]="model.transaction_description"
+                  #transaction_description="ngModel"
+                  name="transaction_description"
+                  rows="5">    		
+    	</textarea>
+    </div>
 	<!-- submit button -->
-	<button type="submit" class="btn text-capitalize expense-submit" id="expense-submit">add expense</button>
+	<button type="submit" class="btn text-capitalize expense-submit">add expense</button>
 </form>

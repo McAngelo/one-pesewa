@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NotifierService } from 'angular-notifier';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  	private readonly notifier: NotifierService;
 
-  ngOnInit() {
-  }
+  	constructor(private _notifierService: NotifierService) {
+	  	this.notifier = _notifierService; 
+	}
+
+  	ngOnInit() {
+  		this.notifier.notify('info', `Welcome to one pesewa, enjoy the app` );
+
+  		/*Swal.fire(
+            'Successful',
+            'Welcome to the dashboard info.',
+            'success'
+        );*/
+  	}
 
 }

@@ -1,11 +1,39 @@
 <!-- budget feedback -->
-<div class="budget-feedback alert alert-danger text-capitalize">budget feedback</div>
+<div class="budget-feedback alert alert-danger text-capitalize" [ngClass]="{ 'showItem': formError }">{{ formErrorMessage }}</div>
 <!-- budget form -->
-<form id="budget-form" class=" budget-form">
-    <h5 class="text-capitalize">please enter your budget</h5>
+<form id="budget-form" class="budget-form" (ngSubmit)="incomeForm.form.valid && onSubmit()" #incomeForm="ngForm">
+    <h5 class="text-capitalize">Record your income</h5>
+    <div class="form-group" [ngClass]="{ 'has-error': incomeForm.submitted && !transaction_title.valid }">
+    	<!-- <label></label> -->
+        <input type="text"
+        	   placeholder="Source of income" 
+        	   class="form-control budget-input" 
+        	   [(ngModel)]="model.transaction_title"
+               #transaction_title="ngModel"
+               name="transaction_title"
+               required >
+        <div *ngIf="incomeForm.submitted && !transaction_title.valid" class="error">source of income is required</div>
+    </div>
     <div class="form-group">
-        <input type="number" class="form-control budget-input" id="budget-input">
+        <input type="number" 
+        	   placeholder="Income amount" 
+        	   class="form-control budget-input" 
+        	   [(ngModel)]="model.amount"
+               #amount="ngModel"
+               name="amount"
+               required >
+        <div *ngIf="incomeForm.submitted && !amount.valid" class="error">income amount is required</div>
+    </div>
+    <div class="form-group">
+    	<textarea type="text"
+                  class="form-control  budget-input"
+                  placeholder="Income description"
+        	   	  [(ngModel)]="model.transaction_description"
+                  #transaction_description="ngModel"
+                  name="transaction_description"
+                  rows="5">    		
+    	</textarea>
     </div>
     <!-- submit button -->
-    <button type="submit" class="btn text-capitalize budget-submit" id="budget-submit">Add Income</button>
+    <button type="submit" class="btn text-capitalize budget-submit">Add Income</button>
 </form>
