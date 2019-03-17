@@ -1,0 +1,64 @@
+<table class="table">
+	<thead>
+		<tr>
+			<th scope="col" width="25%">Date</th>
+			<th scope="col" class="text-center" width="15%">Transaction</th>
+			<th scope="col">Narration</th>
+			<th scope="col">Amount</th>
+			<th scope="col" class="text-right" width="10%">Action</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td scope="row">{{ currentDate | date : 'medium' }}</td>
+			<td class="text-center" ><span class="badge badge-success">Credit</span></td>
+			<td>Salary paid</td>
+			<td>Otto</td>
+			<td>
+				<div class="expense-icons list-item">
+
+					<a href="#" class="edit-icon mx-2" data-id="${expense.id}">
+						<i class="fas fa-edit"></i>
+					</a>
+					<a href="#" class="delete-icon" data-id="${expense.id}">
+						<i class="fas fa-trash"></i>
+					</a>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td scope="row">{{ currentDate | date : 'medium' }}</td>
+			<td class="text-center" ><span class="badge badge-danger">Debit</span></td>
+			<td>Fix gate</td>
+			<td>Thornton</td>
+			<td>
+				<div class="expense-icons list-item">
+
+					<a href="#" class="edit-icon mx-2" data-id="${expense.id}">
+						<i class="fas fa-edit"></i>
+					</a>
+					<a href="#" class="delete-icon" data-id="${expense.id}">
+						<i class="fas fa-trash"></i>
+					</a>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td scope="row">{{ currentDate | date : 'medium' }}</td>
+			<td class="text-center" ><span class="badge badge-success">Credit</span></td>
+			<td>Side gig</td>
+			<td>the Bird</td>
+			<td>
+				<div class="expense-icons list-item">
+
+					<a href="#" class="edit-icon mx-2" data-id="${expense.id}">
+						<i class="fas fa-edit"></i>
+					</a>
+					<a href="#" class="delete-icon" data-id="${expense.id}">
+						<i class="fas fa-trash"></i>
+					</a>
+				</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
