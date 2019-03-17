@@ -12,7 +12,7 @@
     </div>
     <div class="col-4 text-center">
         <h6 class="text-uppercase info-title">Balance</h6>
-        <span class="balance-icon"><i class="fas fa-dollar-sign"></i></span>
+        <span class="balance-icon"><i class="fas fa-coins"></i></span>
         <h4 class="text-uppercase mt-2 balance" id="balance"  [ngClass]="{ 'showBlack': balance  === 0, 'showGreen': balance > 0, 'showRed': balance < 0 }"><!--  <span style="font-size: 20px;">GHs </span> --><span id="balance-amount" style="font-size: 25px;">{{ balance | currency : 'GHs '}}</span></h4>
     </div>
 </div>

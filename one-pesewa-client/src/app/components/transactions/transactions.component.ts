@@ -35,7 +35,7 @@ export class TransactionsComponent implements OnInit {
 	}
 
 	onEdit(id:string){
-		console.log("You are about to edit ", id);
+		//console.log("You are about to edit ", id);
 	}
 
 	onDelete(id:string, title:string){
