@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpParams } from  "@angular/common/http";
 import { Observable } from  "rxjs/Observable";
 import { TransactionModel } from '../../shared/index';
+import Swal from 'sweetalert2';
 
 @Component({
 	selector: 'app-transactions',
@@ -10,9 +11,12 @@ import { TransactionModel } from '../../shared/index';
 })
 export class TransactionsComponent implements OnInit {
 
-	public currentDate:any = Date.now();
 	public transactionsObservable : Observable<TransactionModel[]>;
 	public transactions:any;
+	public filterQuery = "";
+    public rowsOnPage = 10;
+    public sortBy = "transaction_date_created";
+    public sortOrder = "desc";
 
 
 	constructor(private _httpClient:HttpClient) { }
@@ -34,8 +38,42 @@ export class TransactionsComponent implements OnInit {
 		console.log("You are about to edit ", id);
 	}
 
-	onDelete(id:string){
+	onDelete(id:string, title:string){
 		console.log("You are about to delete ", id);
+		const self = this;
+
+	    Swal.fire({
+	      	title: 'Are you sure?',
+	      	text: `You will delete "${title}" record!`,
+	      	type: 'warning',
+	      	showCancelButton: true,
+	      	confirmButtonText: 'Yes',
+	      	cancelButtonText: 'No'
+	    }).then((result) => {
+	      	if (result.value) {
+	        	this.delete(id);
+	      	} else if (result.dismiss === Swal.DismissReason.cancel) {
+	        
+	      	}
+	    });
 	}
+
+	delete(id:string){
+		this._httpClient.patch(`http://127.0.0.1:3000/transactions/${id}`,{ "transaction_status":  false })
+		.subscribe(data  => {
+			console.log("Record deleted successful ", data);
+			window.location.reload();
+		},error  => {
+			console.log("Error", error);
+		});
+	}
+
+	public toInt(num: string) {
+        return +num;
+    }
+
+    public sortByWordLength = (a: any) => {
+        return a.city.length;
+    }
 
 }

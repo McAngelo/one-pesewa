@@ -1,4 +1,4 @@
-<table class="table">
+<table class="table" [mfData]="transactions" #mf="mfDataTable" [mfRowsOnPage]="15" [(mfSortBy)]="sortBy" [(mfSortOrder)]="sortOrder">
 	<thead>
 		<tr>
 			<th scope="col" width="25%">Date</th>
@@ -9,7 +9,7 @@
 		</tr>
 	</thead>
 	<tbody>
-		<tr *ngFor="let transaction of transactions">
+		<tr *ngFor="let transaction of mf.data" [ngClass]="{ 'strikeout': !transaction.transaction_status }">
 			<td scope="row">{{ transaction.transaction_date_created | date : 'medium' }}</td>
 			<td class="text-center" >
 				<span class="badge badge-success" *ngIf="transaction.transaction_type === 'credit'">Credit</span>
@@ -18,16 +18,23 @@
 			<td>{{ transaction.transaction_title }}</td>
 			<td>{{ transaction.amount | currency: 'GHS ' }}</td>
 			<td>
-				<div class="expense-icons list-item">
+				<div class="expense-icons list-item" *ngIf="transaction.transaction_status">
 
 					<a class="edit-icon mx-2" (click)="onEdit(transaction.transaction_id)" >
 						<i class="fas fa-edit"></i>
 					</a>
-					<a class="delete-icon" (click)="onDelete(transaction.transaction_id)" >
+					<a class="delete-icon" (click)="onDelete(transaction.id, transaction.transaction_title)" >
 						<i class="fas fa-trash"></i>
 					</a>
 				</div>
 			</td>
 		</tr>
 	</tbody>
+	<tfoot>
+	    <tr>
+	        <td colspan="4">
+	            <mfBootstrapPaginator [rowsOnPageSet]="[5,10,15,25]"></mfBootstrapPaginator>
+	        </td>
+	    </tr>
+    </tfoot>
 </table>

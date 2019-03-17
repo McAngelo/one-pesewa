@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from  '@angular/common/http';
+import { DataTableModule } from "angular2-datatable";
 
 import { AppRoutingModule } from './app-routing.module'
 import { NotifierModule, NotifierOptions } from 'angular-notifier';;
@@ -69,6 +70,7 @@ const customNotifierOptions: NotifierOptions = {
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
+    DataTableModule,
     NotifierModule.withConfig(customNotifierOptions)
   ],
   providers: [],
