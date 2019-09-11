@@ -1,1 +1,0 @@
-export * from './main-convertor/main-convertor.component';
