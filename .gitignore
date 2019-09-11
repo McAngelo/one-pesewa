@@ -1,18 +1,18 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
-/one-pesewa-client/dist
-/one-pesewa-client/tmp
-/one-pesewa-client/out-tsc
+/dist
+/tmp
+/out-tsc
 # Only exists if Bazel was run
-/one-pesewa-client/bazel-out
+/bazel-out
 
 # dependencies
-/one-pesewa-client/node_modules
+/node_modules
 
 # profiling files
-/one-pesewa-client/chrome-profiler-events.json
-/one-pesewa-client/speed-measure-plugin.json
+chrome-profiler-events.json
+speed-measure-plugin.json
 
 # IDEs and editors
 /.idea
