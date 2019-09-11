@@ -4,8 +4,8 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
 	/* Landing module route */
     { path: '', loadChildren: () => import('./modules/accounting/accounting.module').then(m => m.AccountingModule) },
-    { path: '', loadChildren: () => import('./modules/gallery/gallery.module').then(m => m.GalleryModule) },
-    { path: '', loadChildren: () => import('./modules/csv-json/csv-json.module').then(m => m.CsvJsonModule) },
+    /*{ path: '', loadChildren: () => import('./modules/gallery/gallery.module').then(m => m.GalleryModule) },
+    { path: '', loadChildren: () => import('./modules/csv-json/csv-json.module').then(m => m.CsvJsonModule) },*/
     
     /* Error Messages routes */
     /*{ path: 'error', loadChildren: './modules/error-messages/error-messages.module#ErrorMessagesModule' },

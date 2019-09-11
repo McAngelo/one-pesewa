@@ -13,7 +13,7 @@ import { PubSubService } from 'angular7-pubsub';
 })
 export class TransactionsComponent implements OnInit, OnDestroy  {
 
-	@ViewChild('displayDetailsBtn', { read: true, static: false }) displayDetailsBtn: ElementRef;
+	@ViewChild('displayDetailsBtn', { static: false }) displayDetailsBtn: ElementRef;
 
 	public baseUrl:string = environment._apiEndpoint;
 	public transactionsObservable : Observable<ApiResponse<TransactionModel[]>>;
