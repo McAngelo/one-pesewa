@@ -24,9 +24,10 @@
             ],
             "styles": [
               "src/styles.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/assets/css/all.css",
               "src/assets/css/main.css",
-              "src/assets/css/all.css"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/ngx-toastr/toastr.css"
             ],
             "scripts": [
               "src/assets/js/jquery-3.3.1.min.js",

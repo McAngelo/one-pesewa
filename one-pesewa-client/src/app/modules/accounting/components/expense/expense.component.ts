@@ -1,22 +1,27 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { HttpClient, HttpParams } from  "@angular/common/http";
-import { TransactionModel } from '../../shared/index';
+import { TransactionModel } from '../../../../shared/index';
+import { environment } from './../../../../../environments/environment';
 import { Guid } from "guid-typescript";
+import { PubSubService } from 'angular7-pubsub';
 
 @Component({
-    selector: 'app-income',
-    templateUrl: './income.component.html',
-    styleUrls: ['./income.component.css']
+	selector: 'app-expense',
+	templateUrl: './expense.component.html',
+	styleUrls: ['./expense.component.css']
 })
-export class IncomeComponent implements OnInit {
+export class ExpenseComponent implements OnInit {
 
+    public baseUrl:string = environment._apiEndpoint;
 	public model:any = new TransactionModel();
 	public processing:boolean;
     public formError: boolean;
     public formErrorMessage: string;
 
-    constructor(private _httpClient:HttpClient) { }
+    constructor(
+        private _httpClient:HttpClient,
+        private _pubsub: PubSubService) { }
 
     ngOnInit() { }
 
@@ -39,19 +44,27 @@ export class IncomeComponent implements OnInit {
             this.model.user_id = 1;
             this.model.transaction_created_by = 1;
             this.model.transaction_date_created = Date.now();
-            this.model.transaction_type = "credit";
-            this.model.transaction_status = true;
+            this.model.transaction_type = "debit";
+            this.model.transaction_status = "active";
             console.log("We are submitting the income form", this.model);
 
-            this.saveIncome(this.model);
+            this.save(this.model);
         }
     }
 
-    saveIncome(data:any){
-        this._httpClient.post("http://127.0.0.1:3000/transactions",data)
+    save(data:any){
+        this._httpClient.post(`${this.baseUrl}/transactions`, data)
         .subscribe( data  => {
-            console.log("POST Request is successful ", data);
-            window.location.reload();
+            /*console.log("POST Request is successful ", data);
+            window.location.reload();*/
+            let pubMessage = {
+                type: 'success',
+                message: 'Expense was added successfully',
+                data: data
+            };
+            this._pubsub.$pub('updateTransactions', pubMessage);
+            this._pubsub.$pub('closeModal', { message:'closeExpenseModal' });
+            this.model = new TransactionModel();
         }, error  => {
             console.log("Error", error);
         });

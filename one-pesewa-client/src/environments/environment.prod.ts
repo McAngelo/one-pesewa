@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  _apiEndpoint: 'https://sharp-services-api.herokuapp.com/api/v1',
 };

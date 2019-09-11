@@ -1,0 +1,77 @@
+<table class="table" [mfData]="transactions" #mf="mfDataTable" [mfRowsOnPage]="10" [(mfSortBy)]="sortBy" [(mfSortOrder)]="sortOrder">
+	<thead>
+		<tr>
+			<th scope="col" width="25%">Date</th>
+			<th scope="col" class="text-center" width="15%">Transaction</th>
+			<th scope="col">Narration</th>
+			<th scope="col">Amount</th>
+			<th scope="col" class="text-right" width="10%">Action</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let transaction of mf.data" [ngClass]="{ 'strikeout': transaction.transaction_status[0] === 'delete' }">
+			<td scope="row">{{ transaction.transaction_date_created | date : 'medium' }}</td>
+			<td class="text-center" >
+				<span class="badge badge-success" *ngIf="transaction.transaction_type === 'credit'">Credit</span>
+				<span class="badge badge-danger" *ngIf="transaction.transaction_type === 'debit'">Debit</span>
+			</td>
+			<td>{{ transaction.transaction_title }}</td>
+			<td>{{ transaction.amount | currency: 'GHS ' }}</td>
+			<td class="text-right">
+
+				
+				<div class="expense-icons list-item">
+					<a class="edit-icon mx-2" (click)="onViewDetails(transaction._id)" style="color: #05668d;">
+						<i class="fas fa-eye"></i>
+					</a>
+					<a class="edit-icon mx-2" (click)="onEdit(transaction._id)" style="color: #05668d;" *ngIf="transaction.transaction_status[0] === 'active'">
+						<i class="fas fa-edit"></i>
+					</a>
+					<a class="delete-icon" (click)="onDelete(transaction._id, transaction.transaction_title)" style="color: #b80c09;" *ngIf="transaction.transaction_status[0] === 'active'">
+						<i class="fas fa-trash"></i>
+					</a>
+				</div>
+			</td>
+		</tr>
+	</tbody>
+	<tfoot>
+	    <tr>
+	        <td colspan="4">
+	            <mfBootstrapPaginator [rowsOnPageSet]="[10,15,25]"></mfBootstrapPaginator>
+	        </td>
+	    </tr>
+    </tfoot>
+</table>
+
+<button style="display: none;"  type="button" class="btn btn-danger" data-toggle="modal" data-target="#displayModal" #displayDetailsBtn>Expense</button>
+
+<!-- Income Modal -->
+<div class="modal fade" id="displayModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">{{ transaction.transaction_title }} ( GHS {{transaction.amount | number }}) </h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close" #closeIncomeBtn>
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="col-md-12">
+					<div class="col-md-9">
+						<h4>Narration</h4>
+					</div>
+					<div class="col-md-3">
+						<td class="text-center" >
+							<span class="badge badge-success" *ngIf="transaction.transaction_type === 'credit'">Credit</span>
+							<span class="badge badge-danger" *ngIf="transaction.transaction_type === 'debit'">Debit</span>
+						</td>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<p>{{ transaction.transaction_description }}</p>
+					<p>{{ transaction.transaction_date_created | date : 'medium' }}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
