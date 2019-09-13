@@ -7,8 +7,8 @@ import { PubSubService } from 'angular7-pubsub';
   styleUrls: ['./main-accounting.component.css']
 })
 export class MainAccountingComponent implements OnInit {
-	@ViewChild('closeIncomeBtn', { read: true, static: false }) closeIncomeBtn: ElementRef;
-	@ViewChild('closeExpenseBtn', { read: true, static: false }) closeExpenseBtn: ElementRef;
+	@ViewChild('closeIncomeBtn', { static: false }) closeIncomeBtn: ElementRef;
+	@ViewChild('closeExpenseBtn', { static: false }) closeExpenseBtn: ElementRef;
   	constructor(
   		private _el: ElementRef,
         private _pubsub: PubSubService) { }
