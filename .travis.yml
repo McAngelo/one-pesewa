@@ -1,13 +1,13 @@
-language: node_js
-node_js:
-- '10.16.3'
-deploy:
-  provider: heroku
-  api_key:
-    secure: 68C6E418970E453E0019A83020BCD1B21D1093E8DF16534985A0871DF4537077,D336828FD91522ED6D7A03D6EAAFF49C8CAB7F1592F84990CF7FABF397A04EDF
-  app: one-pesewa
-  on:
-    repo: McAngelo/one-pesewa
-run:
-- restart
-- rake cleanup         
+#language: node_js
+#node_js:
+#- '10.16.3'
+#deploy:
+#  provider: heroku
+#  api_key:
+#    secure: 68C6E418970E453E0019A83020BCD1B21D1093E8DF16534985A0871DF4537077,D336828FD91522ED6D7A03D6EAAFF49C8CAB7F1592F84990CF7FABF397A04EDF
+#  app: one-pesewa
+#  on:
+#    repo: McAngelo/one-pesewa
+#run:
+#- restart
+#- rake cleanup         
