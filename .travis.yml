@@ -4,7 +4,7 @@ node_js:
 deploy:
   provider: heroku
   api_key:
-    secure: Z8221d86f-c3a9-406f-8a3e-31bf6969c5e6
+    #secure: Z8221d86f-c3a9-406f-8a3e-31bf6969c5e6
   app: one-pesewa
   on:
     repo: McAngelo/one-pesewa
