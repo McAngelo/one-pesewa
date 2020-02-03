@@ -4,10 +4,10 @@ node_js:
 deploy:
   provider: heroku
   api_key:
-    #secure: Z8221d86f-c3a9-406f-8a3e-31bf6969c5e6
+    secure: 68C6E418970E453E0019A83020BCD1B21D1093E8DF16534985A0871DF4537077,D336828FD91522ED6D7A03D6EAAFF49C8CAB7F1592F84990CF7FABF397A04EDF
   app: one-pesewa
   on:
     repo: McAngelo/one-pesewa
 run:
 - restart
-- rake cleanup
+- rake cleanup         
