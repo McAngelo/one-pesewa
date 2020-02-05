@@ -1,6 +1,15 @@
 language: node_js
 node_js:
 - '10.16.3'
+# blocklist
+branches:
+  except:
+  - development
+
+# safelist
+branches:
+  only:
+  - master
 deploy:
   provider: heroku
   api_key:
