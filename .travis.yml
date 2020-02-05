@@ -25,9 +25,9 @@ deploy:
 #    branches:
 #      only:
 #      - master
-run:
-- restart
-- rake cleanup
+#run:
+#- restart
+#- rake cleanup
 
 notifications:
   email:
