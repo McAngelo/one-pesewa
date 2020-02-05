@@ -21,6 +21,7 @@
     "@angular/router": "^8.2.14",
     "angular-notifier": "^4.1.2",
     "angular2-datatable": "^0.6.0",
+    "angular7-pubsub": "^2.1.1",
     "bootstrap": "^4.4.1",
     "core-js": "^2.6.11",
     "express": "^4.17.1",
