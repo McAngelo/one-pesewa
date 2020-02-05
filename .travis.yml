@@ -5,6 +5,9 @@ node_js:
 cache:
   npm: false
 
+before_deploy:
+    - travis_terminate 0
+
 deploy:
   skip_cleanup: false
   provider: heroku
