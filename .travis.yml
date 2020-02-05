@@ -5,8 +5,8 @@ node_js:
 cache:
   npm: false
 
-before_deploy:
-    - travis_terminate 0
+#before_deploy:
+#    - travis_terminate 0
 
 deploy:
   skip_cleanup: false
@@ -17,14 +17,14 @@ deploy:
   on:
     repo: McAngelo/one-pesewa
     # blocklist
-    branches:
-      except:
-      - development
+#    branches:
+#      except:
+#      - development
 
     # safelist
-    branches:
-      only:
-      - master
+#    branches:
+#      only:
+#      - master
 run:
 - restart
 - rake cleanup
@@ -34,4 +34,4 @@ notifications:
     recipients:
     - mcangelo200@gmail.com
     on_success: change
-    on_failure: always 
+    on_failure: never 
