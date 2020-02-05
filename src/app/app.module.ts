@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from  '@angular/common/http';
 import { DataTableModule } from "angular2-datatable";
 import { ToastrModule } from 'ngx-toastr';
-/*import { PubSubModule } from 'angular7-pubsub';*/
+import { PubSubModule } from 'angular7-pubsub';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './main/app.component';
@@ -27,7 +27,7 @@ import { LandingLayoutComponent } from './main/landing-layout/landing-layout.com
         HttpClientModule,
         DataTableModule,
         ToastrModule.forRoot(),
-        /*PubSubModule.forRoot()*/
+        PubSubModule.forRoot()
     ],
     providers: [],
     bootstrap: [AppComponent]
