@@ -1,13 +1,13 @@
-#language: node_js
-#node_js:
-#- '10.16.3'
-#deploy:
-#  provider: heroku
-#  api_key:
-#    secure: 68C6E418970E453E0019A83020BCD1B21D1093E8DF16534985A0871DF4537077,D336828FD91522ED6D7A03D6EAAFF49C8CAB7F1592F84990CF7FABF397A04EDF
-#  app: one-pesewa
-#  on:
-#    repo: McAngelo/one-pesewa
-#run:
-#- restart
-#- rake cleanup         
+language: node_js
+node_js:
+  - '10.16.3'
+deploy:
+  provider: heroku
+  api_key:
+    secure: FBd4L2Ysy3dmykqwD9mMXY75f1Zm39D695VDEv0TQVIEtyKxCWcjoecpxp6KWbpYf026WDS8u9wIk4RhsK/m4RWRhfQ4GF9h0Nv0mV1y0H01sqGBLedjYEKz9tAUH2x63L50pRbmNLnHdHPAzjq8AjKwMI37G1LIdY/nryDD0V74E/gMYalo9hGC7imxTmWxs43Y9tCN5xJbsFPV0KtbIg7iK/xXV8wQCi/mvDJEY9O6QYlHBERYbqt6AKGwC+6JIV19+AGir3DDdV1nEn2XS8xx9fl2teWslKat9BsonN0vFxf33CBtuTIrgxRL1hMvGcuxKj63g4FokRjVyM0M0wnlLEjNOJ6YrhfManuOlKp7Wx3Zo2n+jOFyCxpnBaesceSZsHWiLNN2L6ooxL0Ut974Wyb3zjlQ9SwxNRyV4y+GYqYkK9wqJFpBD/WTgXCv7Ef3YoEJtLK5JNWBXMBvnq2AktuqYq4b+u1iFS2JJPGZBQjgYxH5WXEnywFdAKQAorDJnFwjyTBPxDKvO3kR4BVqAuCXpwqF7VClA9T2ApV5phATsIEVZsP29XrD9zXt02DSgN0P0/0u88nEZqZvECZ5dVeF84SDbbc32vs8kQvbi/xBwgkmCQE5kBVWD7BAwVo7g1vLKTBHsFRUfnBZ/y1kzFfQjCnAyiFoDm2LF/U=
+  app: one-pesewa
+  on:
+    repo: McAngelo/one-pesewa
+run:
+  - restart
+  - rake cleanup         
