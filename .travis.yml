@@ -4,12 +4,12 @@ node_js:
 # blocklist
 branches:
   except:
-  - development
+  - master
 
 # safelist
 branches:
   only:
-  - master
+  - develop
 deploy:
   provider: heroku
   api_key:
