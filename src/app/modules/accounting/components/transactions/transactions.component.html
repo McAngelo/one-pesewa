@@ -3,7 +3,7 @@
 		<tr>
 			<th scope="col" width="25%">Date</th>
 			<th scope="col" class="text-center" width="15%">Transaction</th>
-			<th scope="col">Narration</th>
+			<th scope="col">Income Source</th>
 			<th scope="col">Amount</th>
 			<th scope="col" class="text-right" width="10%">Action</th>
 		</tr>
@@ -67,10 +67,16 @@
 						</td>
 					</div>
 				</div>
-				<div class="col-md-12">
+				<div class="row">
+					<div class="col-md-12">
 					<p>{{ transaction.transaction_description }}</p>
-					<p>{{ transaction.transaction_date_created | date : 'medium' }}</p>
 				</div>
+				</div>
+				
+			</div>
+
+			<div class="modal-footer">
+					<p class="text-muted">{{ transaction.transaction_date_created | date : 'medium' }}</p>
 			</div>
 		</div>
 	</div>
