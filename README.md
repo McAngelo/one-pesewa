@@ -1,4 +1,4 @@
-# one-pesewa
+# one-pesewa  [![Travis Build Status](https://travis-ci.org/McAngelo/one-pesewa.svg?branch=master) [![MIT License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)]
 
 This is the client-side application for the One Pesewa
 
