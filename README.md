@@ -1,4 +1,5 @@
-# one-pesewa  [![Travis Build Status](https://travis-ci.org/McAngelo/one-pesewa.svg?branch=master) [![MIT License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)]
+# one-pesewa  
+# [![Travis Build Status](https://travis-ci.org/McAngelo/one-pesewa.svg?branch=master) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/McAngelo/one-pesewa/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/McAngelo/one-pesewa/?branch=master) [![Code Coverage](https://scrutinizer-ci.com/g/McAngelo/one-pesewa/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/McAngelo/one-pesewa/?branch=master) [![Code Intelligence Status](https://scrutinizer-ci.com/g/McAngelo/one-pesewa/badges/code-intelligence.svg?b=master)](https://scrutinizer-ci.com/code-intelligence) [![MIT License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)]
 
 This is the client-side application for the One Pesewa
 
