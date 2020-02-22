@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  //_apiEndpoint: 'http://localhost:8080/api/v1',
-   _apiEndpoint: 'https://sharp-services-api.herokuapp.com/api/v1',
+  _apiEndpoint: 'http://localhost:3000/api/v1',
+  // _apiEndpoint: 'https://sharp-services-api.herokuapp.com/api/v1',
 };
 
 /*
