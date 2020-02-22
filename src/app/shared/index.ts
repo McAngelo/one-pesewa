@@ -1,3 +1,6 @@
+/* Exporting auth  */
+export * from './_guards/auth.guard';
+
 /* Exporting models */
 export * from './_models/transactions';
 export * from './_models/api-response';
