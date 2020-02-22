@@ -5,7 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 import {
     ForgottenPasswordComponent,
     LoginComponent,
-    SignUpComponent
+    ResetPasswordComponent
 } from './index';
  
 const routes: Routes = [
