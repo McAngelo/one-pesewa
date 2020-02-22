@@ -5,7 +5,8 @@ import { Routes, RouterModule } from '@angular/router';
 import {
     ForgottenPasswordComponent,
     LoginComponent,
-    ResetPasswordComponent
+    ResetPasswordComponent,
+	EmailVerificationComponent
 } from './index';
  
 const routes: Routes = [
@@ -13,8 +14,9 @@ const routes: Routes = [
      /* Login, Sign Up and Forgotten Password */
 
     { path: 'login', component: LoginComponent },
-    //{ path: 'sign-up', component: SignUpComponent },
+    { path: 'reset-password/:id', component: ResetPasswordComponent },
     { path: 'forgotten-password', component: ForgottenPasswordComponent },
+    { path: 'email-verification/:id/:id', component: EmailVerificationComponent }
 ];
 
 
