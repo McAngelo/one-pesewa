@@ -9,3 +9,6 @@ export * from './_models/user';
 
 /* Exporting services */
 export * from './_utils/notification.service';
+export * from './_services/authentication.service';
+
+export * from './_helpers/error.interceptor';
