@@ -12,18 +12,18 @@ const routes: Routes = [
         component: LandingLayoutComponent,
         loadChildren: () => import('./modules/authentication/authentication.module').then(m => m.AuthenticationModule) 
     },
-    { 
+    /*{ 
         path: '',  
         component: PortalLayoutComponent,
         loadChildren: () => import('./modules/accounting/accounting.module').then(m => m.AccountingModule) 
     },
-    /*{ path: '', loadChildren: () => import('./modules/csv-json/csv-json.module').then(m => m.CsvJsonModule) },*/
+    { path: '', loadChildren: () => import('./modules/csv-json/csv-json.module').then(m => m.CsvJsonModule) },*/
     
     /* Error Messages routes */
     /*{ path: 'error', loadChildren: './modules/error-messages/error-messages.module#ErrorMessagesModule' },
     { path: 'access-denied', loadChildren: './modules/error-messages/error-messages.module#ErrorMessagesModule' },
     { path: 'not-found', loadChildren: './modules/error-messages/error-messages.module#ErrorMessagesModule'  },*/
-    { path: '', redirectTo: 'accounting', pathMatch: 'full' },
+    { path: '', redirectTo: 'login', pathMatch: 'full' },
     { path: '**', redirectTo: 'accounting' }
 ];
 
