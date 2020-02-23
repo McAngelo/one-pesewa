@@ -15,7 +15,7 @@ const routes: Routes = [
     { 
         path: '',  
         component: PortalLayoutComponent,
-        loadChildren: () => import('./modules/accounting/accounting.module').then(m => m.AccountingModule) 
+        loadChildren: () => import('./modules/client/client.module').then(m => m.ClientModule) 
     },
     /*{ path: '', loadChildren: () => import('./modules/csv-json/csv-json.module').then(m => m.CsvJsonModule) },*/
     
@@ -23,7 +23,7 @@ const routes: Routes = [
     /*{ path: 'error', loadChildren: './modules/error-messages/error-messages.module#ErrorMessagesModule' },
     { path: 'access-denied', loadChildren: './modules/error-messages/error-messages.module#ErrorMessagesModule' },
     { path: 'not-found', loadChildren: './modules/error-messages/error-messages.module#ErrorMessagesModule'  },*/
-    { path: '', redirectTo: 'accounting', pathMatch: 'full' },
+    { path: '', redirectTo: 'login', pathMatch: 'full' },
     { path: '**', redirectTo: 'accounting' }
 ];
 

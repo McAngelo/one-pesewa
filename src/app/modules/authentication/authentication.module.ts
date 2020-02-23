@@ -3,16 +3,23 @@ import { CommonModule } from '@angular/common';
 import { 
 	LoginComponent, 
 	ForgottenPasswordComponent,
-	SignUpComponent 
+	ResetPasswordComponent,
+	EmailVerificationComponent
 } from './index';
 
 import { AuthenticationRoutingModule } from './authentication-routing.module';
 
+
 @NgModule({
-  declarations: [LoginComponent, ForgottenPasswordComponent, SignUpComponent],
-  imports: [
-    CommonModule,
-    AuthenticationRoutingModule
-  ]
+	declarations: [
+		LoginComponent,
+		ForgottenPasswordComponent,
+		ResetPasswordComponent,
+		EmailVerificationComponent
+	],
+	imports: [
+		CommonModule,
+		AuthenticationRoutingModule
+	]
 })
 export class AuthenticationModule { }

@@ -1,1 +1,0 @@
-export * from './main-gallery/main-gallery.component';
