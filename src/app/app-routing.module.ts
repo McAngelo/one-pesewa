@@ -12,12 +12,12 @@ const routes: Routes = [
         component: LandingLayoutComponent,
         loadChildren: () => import('./modules/authentication/authentication.module').then(m => m.AuthenticationModule) 
     },
-    /*{ 
+    { 
         path: '',  
         component: PortalLayoutComponent,
-        loadChildren: () => import('./modules/accounting/accounting.module').then(m => m.AccountingModule) 
+        loadChildren: () => import('./modules/client/client.module').then(m => m.ClientModule) 
     },
-    { path: '', loadChildren: () => import('./modules/csv-json/csv-json.module').then(m => m.CsvJsonModule) },*/
+    /*{ path: '', loadChildren: () => import('./modules/csv-json/csv-json.module').then(m => m.CsvJsonModule) },*/
     
     /* Error Messages routes */
     /*{ path: 'error', loadChildren: './modules/error-messages/error-messages.module#ErrorMessagesModule' },
