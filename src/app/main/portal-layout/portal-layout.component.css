@@ -142,7 +142,7 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 
-.btn-sm {
+/*.btn-sm {
     line-height: 0.5;
 }
 .btn {
@@ -224,7 +224,7 @@ button {
     border-style: solid;
     border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
     border-image: initial;
-}
+}*/
 
 #topbar {
     z-index: 1023;
