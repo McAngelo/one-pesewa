@@ -1,2 +1,346 @@
 /* You can add global styles to this file, and also import other style files */
-#skin-menu{display:block}#skin-toolbox{position:fixed;top:220px;right:-182px;width:180px;height:390px;border-radius:5px 0 0 5px;border:3px solid #f0ad4e;z-index:999;overflow:visible!important;-webkit-box-shadow:0 2px 10px rgba(0,0,0,0.2);box-shadow:0 2px 10px rgba(0,0,0,0.2);background-repeat:repeat-x;background-image:-webkit-linear-gradient(top,#ffffff 1%,#f1f1f1 100%);background-image:linear-gradient(to bottom,#ffffff 1%,#f1f1f1 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',endColorstr='#f1f1f1',GradientType=0);filter:progid:DXImageTransform.Microsoft.gradient(enabled=false);}.skin-toolbox-toggle{position:absolute;top:30px;left:-43px;width:40px;height:43px;border-right:0;border-radius:3px 0 0 3px;cursor:pointer;line-height:49px;border:1px solid #e69b2f;text-shadow:1px -1px #cb7f12;background-repeat:repeat-x;background-image:-webkit-linear-gradient(top,#fead3c 1%,#f88c00 100%);background-image:linear-gradient(to bottom,#fead3c 1%,#f88c00 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fead3c',endColorstr='#f88c00',GradientType=0);filter:progid:DXImageTransform.Microsoft.gradient(enabled=false);}.skin-toolbox-toggle .fa{padding-left:7px;color:#fff;font-size:28px;}.skin-option{float:left;width:22px;height:22px;margin:5px;padding:3px;background-color:#dadada;border:1px solid #CCC;-webkit-box-shadow:0 -1px 1px rgba(0,0,0,0.1) inset,0 1px 0 rgba(255,255,255,1);box-shadow:0 -1px 1px rgba(0,0,0,0.1) inset,0 1px 0 rgba(255,255,255,1);}.skin-color{width:14px;height:14px;border:1px solid #CCC;background:#FFF;cursor:pointer;}.skin-toolbox-panel{padding:20px 13px 0}.skin-toolbox-panel .form-group{margin-bottom:8px}.skin-toolbox-panel label{font-size:11px}.skin-option.active{border:1px solid #f0ad4e}#customizer-link{font-size:14px}body.upload-tools-page .dropzone{min-height:405px;}body.upload-tools-page .panel-body{min-height:300px;}body.timeline-page .panel-clone{display:none;}.slider-example .form-horizontal .col-md-9{margin-top:65px;}.slider-example .form-horizontal .col-md-2{margin-top:62px;margin-right:20px;}.slider-example .form-horizontal .form-group.first .col-md-9{margin-top:45px;}.slider-example .form-horizontal .form-group.first .col-md-2{margin-top:42px;}.slider-example .form-horizontal .form-group:last-child{margin-bottom:40px;}body.portlets-page .panel .tab-content{padding:0;border:0;min-height:95px;}body.portlets-page #accordion{-webkit-box-shadow:0 1px 1px 0 rgba(0,0,0,0.33);box-shadow:0 1px 1px 0 rgba(0,0,0,0.33);margin-bottom:35px;}body.maps-page .map{width:100%;height:400px;}body.maps-page .panel-menu button{margin-right:8px;min-height:35px;min-width:75px;}body.maps-page .panel-menu button:last-child{margin-right:0px;min-height:35px;}body.gallery-page{overflow:scroll;}body.dynamic-gallery-page{overflow:scroll;min-height:1600px;}body.forms-page .make-switch{margin-right:10px;margin-bottom:6px;}body.forms-page #focusedInput{outline:0;outline:thin dotted \9;border-color:rgba(82,168,236,.8);-webkit-box-shadow:0 0 8px rgba(82,168,236,.6);box-shadow:0 0 8px rgba(82,168,236,.6);}body.elements-page .panel button{margin-right:6px;margin-bottom:8px;}body.elements-page .panel .btn-group button{margin-right:0;margin-bottom:0;}body.elements-page .btn-block{border-radius:0;}body.charts-page .panel-menu label{font-size:13px;font-weight:600;color:#888;margin-right:5px;}body.charts-page .legend table tr td{padding:5px 10px 5px 5px;}.animate-me-btns a{margin:5px 5px 7px;}.animate-me-btns .tab-content{border:0;padding-bottom:30px;}body.buttons-page .panel button{margin-right:6px;margin-bottom:8px;}body.buttons-page .panel .btn-group{margin-right:5px;}body.buttons-page .panel .btn-group button{margin-right:0;margin-bottom:8px;}body.buttons-page .panel .btn-group-vertical button{margin-right:0;margin-bottom:0;}body.buttons-page .social-buttons-panel button{margin:10px;}body.buttons-page .zocial,a.zocial{min-height:32px;margin:8px;}body.buttons-page .zocial.icon{min-height:28px;}body.buttons-page .zocial.icon.facebook:before{padding-right:5px;}.icon-option-menu li a{cursor:pointer;}.icon-option-menu li a i{padding-right:6px;color:#777;}#icon-nav.affix{top:80px;}#icon-nav ul{width:220px;}#icon-nav li:hover span{color:#444;}#icon-nav li.active span{color:#428bca}.panel-body .page-header{color:#428bca;font-size:18px;}#glyphicons-icon-list,#glyphicon-icon-list,#imoon-icon-list,.fa-icon-list{font-size:12px;padding-left:0;padding-bottom:1px;margin-bottom:20px;list-style:none;overflow:hidden;}#glyphicons-icon-list li,#glyphicon-icon-list li,#imoon-icon-list li,.fa-icon-list li{float:left;width:25%;height:100px;padding:5px;line-height:1.4;text-align:center;}#glyphicons-icon-list .glyphicons,#glyphicon-icon-list .glyphicon,#imoon-icon-list .imoon,.fa-icon-list .fa{display:block;margin:5px auto 15px;font-size:24px;}#glyphicons-icon-list li:hover,#glyphicon-icon-list li:hover,#imoon-icon-list li:hover,.fa-icon-list li:hover{color:#428bca;}.panel-tabs>li>a:hover{background-color:#f2f2f2;}#return-arrow{color:#555;padding-left:15px;padding-top:15px;position:fixed;opacity:0.4;cursor:pointer;display:block;z-index:1050;}#return-arrow i.fa{float:left;padding-top:2px;}#return-arrow span{float:left;padding-left:15px;padding-top:0px;font-size:16px;}#return-arrow:hover{opacity:1}#return-arrow:hover i.fa{opacity:0.7}
+
+/* OnePesewa Fonts */
+@font-face {
+	font-family: 'Gotham-Book';
+	src: url('./assets/fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'),
+	url('./assets/fonts/Gotham-Book.woff') format('woff'),
+	url('./assets/fonts/Gotham-Book.ttf')  format('truetype'),
+	url('./assets/fonts/Gotham-Book.svg#Gotham-Book') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham-Black';
+	src: url('./assets/fonts/Gotham-Black.eot?#iefix') format('embedded-opentype'),
+	url('./assets/fonts/Gotham-Black.otf')  format('opentype'),
+	url('./assets/fonts/Gotham-Black.woff') format('woff'),
+	url('./assets/fonts/Gotham-Black.ttf')  format('truetype'),
+	url('./assets/fonts/Gotham-Black.svg#Gotham-Black') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham-Thin';
+	src: url('./assets/fonts/Gotham-Thin.eot?#iefix') format('embedded-opentype'),
+	url('./assets/fonts/Gotham-Thin.woff') format('woff'),
+	url('./assets/fonts/Gotham-Thin.ttf')  format('truetype'),
+	url('./assets/fonts/Gotham-Thin.svg#Gotham-Thin') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham-Light';
+	src: url('./assets/fonts/Gotham-Light.eot?#iefix') format('embedded-opentype'),
+	url('./assets/fonts/Gotham-Light.otf')  format('opentype'),
+	url('./assets/fonts/Gotham-Light.woff') format('woff'),
+	url('./assets/fonts/Gotham-Light.ttf')  format('truetype'),
+	url('./assets/fonts/Gotham-Light.svg#Gotham-Light') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham-ExtraLight';
+	src: url('./assets/fonts/Gotham-ExtraLight.eot?#iefix') format('embedded-opentype'),
+	url('./assets/fonts/Gotham-ExtraLight.otf')  format('opentype'),
+	url('./assets/fonts/Gotham-ExtraLight.woff') format('woff'),
+	url('./assets/fonts/Gotham-ExtraLight.ttf')  format('truetype'),
+	url('./assets/fonts/Gotham-ExtraLight.svg#Gotham-ExtraLight') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham-Medium';
+	src: url('./assets/fonts/Gotham-Medium.eot?#iefix') format('embedded-opentype'),
+	url('./assets/fonts/Gotham-Medium.otf')  format('opentype'),
+	url('./assets/fonts/Gotham-Medium.woff') format('woff'),
+	url('./assets/fonts/Gotham-Medium.ttf')  format('truetype'),
+	url('./assets/fonts/Gotham-Medium.svg#Gotham-Medium') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/* End OnePesewa Fonts */
+
+
+
+/* Basic OnePesewa Styling */
+body {
+	font-family:"Gotham-Book", Arial, sans-serif;
+	font-weight:normal;
+	font-size:14px;
+	color:#333;
+	background:#fff;
+}
+
+.alpha {padding-left:0;}
+.omega {padding-right:0;}
+
+.cb {}
+.clear {clear:both;}
+a.btn {background:#f5f5f5; color:#f16f22; border:0; border-radius:20px; padding:10px 20px; font-family:Gotham-book;}
+a.btn:hover {background:#f16f22; color:#f5f5f5; border:0; border-radius:20px; padding:10px 20px; font-family:Gotham-book;}
+
+button.btn {background:#f16f22; color:#f5f5f5; border:0; border-radius:3px; padding:10px 20px; font-family:Gotham-book;}
+button.btn:hover {background:#a2b6cb; color:#fff; border:0; border-radius:3px; padding:10px 20px; font-family:Gotham-book;}
+
+.container {
+	min-width:300px;
+}
+
+/* End Basic OnePesewa Styling */
+
+
+
+section.header {
+	padding:15px 0;
+}
+
+section.header .breadcrumb {
+	padding:15px 0; margin:0; background:none; color:#252f77; font-size:14px;
+}
+
+section.header .breadcrumb li, section.header .breadcrumb li a {
+	color:#252f77;
+}
+
+section.header .breadcrumb li.active {
+	font-family:Gotham-Black;
+}
+
+section.header .breadcrumb>li+li:before {
+	content: "\203A\00a0";
+	padding: 0 5px;
+	color: #252f77;
+}
+
+
+section.header .account { color:#252f77; margin-top:10px;}
+section.header .account .btn-group button { border:0; background:none; color:#252f77;}
+section.header .account .btn-group button:focus { border:0; background:none; box-shadow:none; color:#252f77;}
+section.header .account .btn-group.open .dropdown-toggle {box-shadow:none;}
+
+section.header .account .btn-group ul.dropdown-menu { border:0; background:#a2b6cb; color:#fff; width:100%;}
+section.header .account .btn-group ul.dropdown-menu li a {color:#fff;}
+section.header .account .btn-group ul.dropdown-menu li a:hover {background:none;}
+
+
+section.header .account .welcome {padding-top:5px;}
+
+section.header .account .welcomeCount {position:relative; margin-right:30px; display:inline-block;}
+section.header .account .welcomeCount .num {position:absolute; top:-20px; left:0; background:red; color:#fff; display:inline-block; padding:0 5px; border-radius:10px; font-size:12px;}
+section.header .account .welcomeCount .glyphicon {position:absolute; top:-10px; left:15px;}
+
+
+
+
+section.innerPage {
+	background:#f5f5f5; padding:40px 0;
+}
+
+section.innerPage h1, section.innerPage h2, section.innerPage h3, section.innerPage h4, section.innerPage h5, section.innerPage h6 {color:#252f77;}
+
+section.innerPage .switchAccount {color:#252f77; }
+section.innerPage .switchAccount form .theLabel {padding:5px 15px;}
+section.innerPage .switchAccount form select {border:1px solid #dbdbdb; color:#252f77; box-shadow:none;}
+
+section.innerPage .cbActions {}
+section.innerPage .cbActions .myAccount {}
+section.innerPage .cbActions .myAccount .inner {border:1px solid #dbdbdb; border-radius:5px; margin-bottom:20px; height:auto; overflow:hidden;}
+section.innerPage .cbActions .myAccount .inner .status {border-bottom:1px solid #dbdbdb; border-radius:5px 5px 0px 0; overflow:hidden;  padding:10px; background:#fff;}
+section.innerPage .cbActions .myAccount .inner .status .bull {color:#50e3c2; background:#50e3c2; display:inline-block; height:10px; width:10px;font-family:Gotham-Black}
+
+section.innerPage .cbActions .myAccount .inner .user {border-bottom:1px solid #dbdbdb; overflow:hidden;  padding:10px; background:#fff; text-align:left;}
+section.innerPage .cbActions .myAccount .inner .user p {color:#a2b6cb; margin-bottom:3px;}
+section.innerPage .cbActions .myAccount .inner .user p.title {font-family:Gotham-Black;}
+section.innerPage .cbActions .myAccount .inner .accBal, section.innerPage .cbActions .myAccount .inner .accountType {display:inline-block;}
+section.innerPage .cbActions .myAccount .inner .accBal a.btn {border-radius:3px; border:1px solid #252f77; color:#252f77; background:none; padding:0px;}
+section.innerPage .cbActions .myAccount .inner .accBal a.btn:hover {border-radius:3px; border:1px solid #252f77; color:#fff; background:#252f77; padding:0px;}
+
+.noShow {display:none;}
+.theAccountBalance {background:#252f77; padding:10px; color:#fff;}
+.showAccount {padding:10px;}
+
+section.innerPage .cbActions .myAccount .inner .accountType a.btn {border-radius:3px; border:1px solid #fdecbe; color:#f16f22; background:#fdecbe; padding:10px; cursor:default; box-shadow:none;}
+/*section.innerPage .cbActions .myAccount .inner .t3 a.btn:hover {border-radius:3px; border:1px solid #f16f22; color:#fff; background:#f16f22; padding:10px;}*/
+
+
+section.innerPage .cbActions .myAccount .inner .money {margin-top:20px; margin-bottom:10px; overflow:hidden;}
+section.innerPage .cbActions .myAccount .inner .money a.btn {display:block; border:1px solid #dbdbdb; background-color:#fff; border-radius:0;  text-align:left; padding-left:40px; padding-right:0; margin-bottom:10px;  color:#a2b6cb;
+	white-space: pre-wrap; /* css-3 */
+	white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+	white-space: -pre-wrap; /* Opera 4-6 */
+	white-space: -o-pre-wrap; /* Opera 7 */
+	word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+section.innerPage .cbActions .myAccount .inner .money a.btn:hover {background-color:#a2b6cb; color:#fff;}
+
+section.innerPage .cbActions .myAccount .inner .money .addMoney a.btn {background-image:url(./assets/images/addMoneyIcon.png); background-repeat:no-repeat; background-position:10px 50%;}
+section.innerPage .cbActions .myAccount .inner .money .addMoney a.btn:hover {background-image:url(./assets/images/addMoneyHoverIcon.png);}
+
+section.innerPage .cbActions .myAccount .inner .money .transferMoney a.btn {background-image:url(./assets/images/transferMoneyIcon.png); background-repeat:no-repeat; background-position:10px 50%; }
+section.innerPage .cbActions .myAccount .inner .money .transferMoney a.btn:hover {background-image:url(./assets/images/transferMoneyHoverIcon.png);}
+
+section.innerPage .cbActions .myAccount .inner .money .buyAirtime a.btn {background-image:url(./assets/images/buyAirtimeIcon.png); background-repeat:no-repeat; background-position:10px 50%; }
+section.innerPage .cbActions .myAccount .inner .money .buyAirtime a.btn:hover {background-image:url(./assets/images/buyAirtimeHoverIcon.png);}
+
+section.innerPage .cbActions .myAccount .inner .money .payBills a.btn {background-image:url(./assets/images/payBillsIcon.png); background-repeat:no-repeat; background-position:10px 50%; }
+section.innerPage .cbActions .myAccount .inner .money .payBills a.btn:hover {background-image:url(./assets/images/payBillsHoverIcon.png);}
+
+
+
+section.innerPage .cbActions .transactions {color:#a2b6cb;}
+section.innerPage .cbActions .transactions .inner {border:1px solid #dbdbdb; border-radius:5px; margin-bottom:20px; height:100%; overflow:hidden; background:#fff;}
+section.innerPage .cbActions .transactions .inner .title {border-bottom:1px solid #dbdbdb; border-radius:5px 5px 0px 0; overflow:hidden;  padding:10px 0; background:#fff; color:#f16f22;}
+
+section.innerPage .cbActions .transactions .transactionTable {overflow-x:auto;}
+
+section.innerPage .cbActions .transactions .inner .search {padding:10px 0;}
+section.innerPage .cbActions .transactions .inner .search .theSearch {}
+section.innerPage .cbActions .transactions .inner .search .theSearch .input-group {border:1px solid #dbdbdb; color:#c2c2c2; border-radius:5px;}
+section.innerPage .cbActions .transactions .inner .search .theSearch .input-group input {background:#f5f5f5; border:0; box-shadow:none;}
+section.innerPage .cbActions .transactions .inner .search .theSearch .input-group .input-group-btn button {border: 0; background: #F5F5F5;}
+
+section.innerPage .cbActions .transactions .inner .clearDiv {height:10px;}
+section.innerPage .cbActions .transactions .inner .transactionTable {margin:20px auto;}
+
+section.innerPage .cbActions .transactions .inner .pagination {margin:0;}
+section.innerPage .cbActions .transactions .inner .pagination .paginate_button {width:20px;}
+section.innerPage .cbActions .transactions .inner .pagination .paginate_button {text-indent: -9999px;}
+
+section.innerPage .cbActions .transactions .inner .pagination .paginate_button.previous a {background:url(./assets/images/paginateLeft.png) no-repeat center; text-indent: -9999px; width:30px; overflow:hidden; color:transparent;}
+section.innerPage .cbActions .transactions .inner .pagination .paginate_button.next a {background:url(./assets/images/paginateRight.png) no-repeat center;text-indent: -9999px; width:30px; overflow:hidden; color:transparent;}
+section.innerPage .cbActions .transactions .inner .pagination .paginate_button a:hover {background-color:#f5f5f5;}
+
+
+
+
+section.innerPage .cbActions .quickActions {}
+section.innerPage .cbActions .quickActions .inner {border:1px solid #dbdbdb; border-radius:5px; margin-bottom:20px; overflow:hidden;}
+section.innerPage .cbActions .quickActions .inner .title {border-bottom:1px solid #dbdbdb; border-radius:5px 5px 0px 0; overflow:hidden;  padding:10px 0; background:#fff; color:#f16f22;}
+
+section.innerPage .cbActions .quickActions .inner .actions {margin-top:20px; margin-bottom:10px; overflow:hidden; color:#a2b6cb;}
+section.innerPage .cbActions .quickActions .inner .actions a.btn {display:block; border:1px solid #dbdbdb; background-color:#fff;  color:#a2b6cb; border-radius:0;  text-align:left; padding-left:50px; padding-right:0; margin-bottom:10px;
+	white-space: pre-wrap; /* css-3 */
+	white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+	white-space: -pre-wrap; /* Opera 4-6 */
+	white-space: -o-pre-wrap; /* Opera 7 */
+	word-wrap: break-word; /* Internet Explorer 5.5+ a2b6cb*/
+}
+section.innerPage .cbActions .quickActions .inner .actions a.btn:hover {background-color:#a2b6cb; color:#fff;}
+
+section.innerPage .cbActions .quickActions .inner .actions .cheque a.btn {background-image:url(./assets/images/chequeBookIcon.png); background-repeat:no-repeat; background-position:10px 50%;}
+section.innerPage .cbActions .quickActions .inner .actions .cheque a.btn:hover {background-image:url(./assets/images/chequeBookHoverIcon.png);}
+
+section.innerPage .cbActions .quickActions .inner .actions .visa a.btn {background-image:url(./assets/images/visaCardIcon.png); background-repeat:no-repeat; background-position:10px 50%; }
+section.innerPage .cbActions .quickActions .inner .actions .visa a.btn:hover {background-image:url(./assets/images/visaCardHoverIcon.png);}
+
+
+
+
+section.footer {
+	padding:20px 0;
+}
+
+section.footer .footerLinks {display:inline-block;color:#a2b6cb;}
+section.footer .footerLinks .copyright {display:inline-block; color:#a2b6cb; float:left; margin-right:30px;}
+section.footer .footerLinks ul {
+	list-style:none; padding:0; margin:0; float:left;
+}
+section.footer .footerLinks ul li {
+	padding-right:20px; float:left;
+}
+section.footer .footerLinks ul li a {
+	color:#252f77;
+}
+
+
+
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px){
+	section.innerPage .cbActions .myAccount .inner .user {border-bottom:1px solid #dbdbdb; overflow:hidden;  padding:10px; background:#fff; text-align:center;}
+	section.innerPage .cbActions .myAccount .inner .user img {display:inline-block; text-align:center;}
+
+	section.header .logo {text-align:center; }
+	section.header .logo img {display:inline-block;}
+	section.header .account {text-align:center;}
+
+	section.innerPage .cbActions .transactions .transactionTable {overflow-x:scroll;}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px){
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px){
+	section.innerPage .cbActions .myAccount .inner .user {border-bottom:1px solid #dbdbdb; overflow:hidden;  padding:10px; background:#fff; text-align:left;}
+	section.innerPage .cbActions .myAccount .inner .user img {display:inline-block; text-align:left;}
+
+	section.header .account {text-align:right;}
+
+	section.innerPage .cbActions .transactions .transactionTable {overflow-x:auto;}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px){
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px){
+
+}
+
+/* Extra Large Devices, Wide Screens */
+@media only screen and (min-width : 1600px){
+
+}
+
+
+
+
+.card {
+	/* just in case there no content*/
+	padding: 20px 25px 30px;
+	margin: 0 auto 25px;
+	margin-top: 50px;
+	/* shadows and rounded borders */
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+    /*-moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);*/
+    border:1px solid #dbdbdb;
+    float:none;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+.card .input-group {margin:10px auto; border:1px solid #dbdbdb; border-radius:5px; }
+.card .input-group input {border:0; box-shadow:none; padding:25px 10px 25px 0px;  color:#a2b6cb;}
+.card .input-group ::-webkit-input-placeholder {color: #a2b6cb;}
+
+.card .input-group :-moz-placeholder { /* Firefox 18- */color: #a2b6cb;}
+
+.card .input-group ::-moz-placeholder {  /* Firefox 19+ */color: #a2b6cb;}
+
+.card .input-group :-ms-input-placeholder {  color: #a2b6cb;}
+
+.card .input-group .input-group-addon {border:0; line-height:2; background:#fff; color:#a2b6cb;}
+
+.card .remember {display:block; padding:12px; color: #a2b6cb;}
+.card .remember span {display:inline- block; padding-left:8 px;}
+
+.card .form-group {margin-bottom:0px;}
