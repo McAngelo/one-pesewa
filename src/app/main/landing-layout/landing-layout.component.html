@@ -1,15 +1,37 @@
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-11 mx-auto pt-3">
-            <!-- title -->
-            <h3 class="text-uppercase mb-4"><img src="../../assets/images/icons8-expensive-96.png" alt="" width="50px" height="50px"> Pesewa</h3>
-            <div class="row ">
-               
-                <!-- Router holder for the pages -->
-                <div class="col-md-12">
-                    <router-outlet></router-outlet>
-                </div>
+<!-- Login header section -->
+<section class="header">
+    <div class="container">
+        <div class="row">
+            <div class="logo col-md-6"> 
+                <a href="index.html">
+                    <img src="assets/images/onePesewaLogo.png" class="img-responsive" />
+                </a> 
             </div>
+            <div class="account col-md-6 pull-right text-right">
+               <a class="btn" href="signup.html">Sign Up</a>
+           </div>
+
         </div>
     </div>
-</div>
+</section>
+
+<!-- Login main form section -->
+<section class="innerPage">
+    <div class="container">
+        <router-outlet></router-outlet>
+    </div>
+</section>
+
+<!-- Login footer section -->
+<section class="footer text-center">
+    <div class="container">
+        <div class="footerLinks text-center">
+            <span class="copyright">&copy;2020 OnePesewa</span>
+            <ul>
+                <li> <a href="">Privacy </a>
+                <li> <a href="">Legal </a>
+                <li> <a href="">Contact </a>
+            </ul>
+        </div>
+    </div>
+</section>
