@@ -69,12 +69,12 @@
 
 
 /* Basic OnePesewa Styling */
-body {
+* {
 	font-family:"Gotham-Book", Arial, sans-serif;
 	font-weight:normal;
 	font-size:14px;
 	color:#333;
-	background:#fff;
+	/*background:#fff;*/
 }
 
 .alpha {padding-left:0;}

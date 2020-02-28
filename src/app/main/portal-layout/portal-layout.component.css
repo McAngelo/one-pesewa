@@ -1,3 +1,10 @@
+body {
+    font-family: "Gotham-Book", Arial, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    color: #333;
+    background: #fff;
+}
 
 a {
   color: currentColor;
@@ -59,4 +66,19 @@ ul {
   -webkit-transform: scale3d(1, 1, 1);
           transform: scale3d(1, 1, 1);
   opacity: 1;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #a2b6cb;
+}
+
+.table-bordered thead th {
+    color: #a2b6cb;
+}
+
+.table-bordered td, .table-bordered th {
+    /*border: 1px solid #dee2e6;*/
+    border: 1px solid #ddd;
 }
