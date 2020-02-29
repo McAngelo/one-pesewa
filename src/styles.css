@@ -124,8 +124,13 @@ section.header .account .btn-group button { border:0; background:none; color:#25
 section.header .account .btn-group button:focus { border:0; background:none; box-shadow:none; color:#252f77;}
 section.header .account .btn-group.open .dropdown-toggle {box-shadow:none;}
 
-section.header .account .btn-group ul.dropdown-menu { border:0; background:#a2b6cb; color:#fff; width:100%;}
-section.header .account .btn-group ul.dropdown-menu li a {color:#fff;}
+/*section.header .account .btn-group ul.dropdown-menu { border:0; background:#a2b6cb; color:#fff; width:100%;}*/
+section.header .account .btn-group ul.dropdown-menu { 
+	border: solid 1px;
+    background: #fff;
+    color: #000;
+}
+section.header .account .btn-group ul.dropdown-menu li a {color:#000;}
 section.header .account .btn-group ul.dropdown-menu li a:hover {background:none;}
 
 
