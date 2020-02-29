@@ -1,3 +1,6 @@
+<h3 class="text-center">Login with your OnePesewa details</h3>
+<div class="clear">&nbsp;</div>
+
 <div class="container" [ngClass]="{'right-panel-active': enableSignUpForm}"  style="margin-top: 10px;">
 	<div class="form-container sign-up-container">
 		<form action="#">
@@ -13,7 +16,7 @@
 			<input type="password" placeholder="Password" />
 			<input type="password" placeholder="Confirm Password" />
 			<br />
-			<button type="button" [routerLink]="['/accounting']">Sign Up</button>
+			<button type="button" [routerLink]="['/client-portal']">Sign Up</button>
 		</form>
 	</div>
 	<div class="form-container sign-in-container">
@@ -28,21 +31,23 @@
 			<input type="email" placeholder="Email" />
 			<input type="password" placeholder="Password" />
 			<a href="#">Forgot your password?</a>
-			<button type="button" [routerLink]="['/accounting']">Sign In</button>
+			<button type="button" [routerLink]="['/client-portal']">Sign In</button>
 		</form>
 	</div>
 	<div class="overlay-container">
 		<div class="overlay">
 			<div class="overlay-panel overlay-left">
-				<h1>Welcome Back!</h1>
+				<h1 style="color: white;">Welcome Back!</h1>
 				<p>To keep connected with us please login with your personal info</p>
 				<button class="ghost" (click)="switchForm('signIn')">Sign In</button>
 			</div>
 			<div class="overlay-panel overlay-right">
-				<h1>Hello, Friend!</h1>
+				<h1 style="color: white;">Hello, Friend!</h1>
 				<p>Enter your personal details and start journey with us</p>
 				<button class="ghost" (click)="switchForm('signUp')">Sign Up</button>
 			</div>
 		</div>
 	</div>
 </div>
+
+<div class="clear">&nbsp;</div>
