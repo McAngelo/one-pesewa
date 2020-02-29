@@ -4,7 +4,8 @@ import {
 	LoginComponent, 
 	ForgottenPasswordComponent,
 	ResetPasswordComponent,
-	EmailVerificationComponent
+	EmailVerificationComponent,
+	LandingPageComponent
 } from './index';
 
 import { AuthenticationRoutingModule } from './authentication-routing.module';
@@ -13,6 +14,7 @@ import { AuthenticationRoutingModule } from './authentication-routing.module';
 @NgModule({
 	declarations: [
 		LoginComponent,
+		LandingPageComponent,
 		ForgottenPasswordComponent,
 		ResetPasswordComponent,
 		EmailVerificationComponent
