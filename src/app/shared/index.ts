@@ -12,7 +12,7 @@ export * from './_models/user';
 
 /* Exporting utils */
 export * from './_utils/notification.service';
-export * from './_utils/util.service';
+//export * from './_utils/util.service';
 
 /* Exporting services */
 export * from './_services/authentication.service';
