@@ -1,22 +1,21 @@
 import { Component, OnInit } from '@angular/core';
-import { UtilService } from '../../shared'
+//import { UtilService } from '../../shared'
 
 
 @Component({
 	selector: 'app-landing-layout',
 	templateUrl: './landing-layout.component.html',
-	styleUrls: ['./landing-layout.component.css'],
-	providers: [UtilService]
+	styleUrls: ['./landing-layout.component.css']
 })
 export class LandingLayoutComponent implements OnInit {
 	public currentUrl: string;
 	public displayHome: boolean;
 	public displayLogin: boolean;
 
-	constructor(private _utilService: UtilService) { 
+	constructor() { 
 		let rawUrl = window.location.href;
 		let arr = rawUrl.split('/')
-		console.log(arr[3]);
+		//console.log(arr[3]);
 
 
 	}
