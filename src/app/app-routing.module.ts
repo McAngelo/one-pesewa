@@ -6,7 +6,7 @@ import { LandingLayoutComponent } from './main/landing-layout/landing-layout.com
 
 const routes: Routes = [
 	/* Landing module route */
-    { path: '', redirectTo: 'login', pathMatch: 'full' },
+    { path: '', redirectTo: 'home', pathMatch: 'full' },
     { 
         path: '', 
         component: LandingLayoutComponent,
@@ -23,8 +23,7 @@ const routes: Routes = [
     /*{ path: 'error', loadChildren: './modules/error-messages/error-messages.module#ErrorMessagesModule' },
     { path: 'access-denied', loadChildren: './modules/error-messages/error-messages.module#ErrorMessagesModule' },
     { path: 'not-found', loadChildren: './modules/error-messages/error-messages.module#ErrorMessagesModule'  },*/
-    { path: '', redirectTo: 'login', pathMatch: 'full' },
-    { path: '**', redirectTo: 'accounting' }
+    { path: '**', redirectTo: 'home' }
 ];
 
 @NgModule({
