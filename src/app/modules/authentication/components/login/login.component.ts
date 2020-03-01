@@ -8,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class LoginComponent implements OnInit {
 
 	public enableSignUpForm: boolean;
-	constructor() { }
+
+	constructor() {
+	}
 
 	ngOnInit() {
+		
 	}
 
 	public switchForm(enableForm: string): void {  	

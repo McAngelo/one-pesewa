@@ -10,7 +10,9 @@ export * from './_models/api-response';
 export * from './_models/role';
 export * from './_models/user';
 
-/* Exporting services */
+/* Exporting utils */
 export * from './_utils/notification.service';
+//export * from './_utils/util.service';
+
+/* Exporting services */
 export * from './_services/authentication.service';
-export * from './_services/util.service';

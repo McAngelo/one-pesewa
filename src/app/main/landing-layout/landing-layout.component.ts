@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-//import { UtilService } from '../../shared'
+import { Location } from '@angular/common';
+import { Router, ActivatedRoute} from '@angular/router';
 
 
 @Component({
@@ -12,12 +13,31 @@ export class LandingLayoutComponent implements OnInit {
 	public displayHome: boolean;
 	public displayLogin: boolean;
 
-	constructor() { 
-		let rawUrl = window.location.href;
-		let arr = rawUrl.split('/')
-		//console.log(arr[3]);
+	constructor(
+		private _location: Location,
+  		private _router: Router) { 
 
-
+		_router.events.subscribe((val) => {
+	      if(_location.path() != ''){
+	      	this.currentUrl = _location.path()
+	        switch (this.currentUrl) {
+	        	case "":
+				case "/":
+	        	case "/home":
+	        		// code...
+	        		//console.log(this.currentUrl);
+	        		this.displayHome = true;
+	        		this.displayLogin = false;
+	        		break;
+	        	case "/login":
+	        		// code...
+	        		//console.log(this.currentUrl);
+	        		this.displayHome = false;
+	        		this.displayLogin = true;
+	        		break;
+	        }
+	      }
+	    });
 	}
 
 	ngOnInit() {}
