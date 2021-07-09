@@ -1,9 +1,11 @@
 .sticky {
   position: fixed;
+  z-index: 99 !important;
   top: 0;
-  width: 100%
+  width: 100%;
+  background-color: white;
 }
 
-.sticky + .container {
+/* .sticky + .header {
   padding-top: 102px;
-}
+} */
