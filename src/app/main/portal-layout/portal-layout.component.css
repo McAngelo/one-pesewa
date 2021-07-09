@@ -90,3 +90,11 @@ ul {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+
+.sticky {
+  position: fixed;
+  z-index: 99 !important;
+  top: 0;
+  width: 100%;
+  background-color: white;
+}
