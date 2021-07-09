@@ -1,9 +1,11 @@
 {
   "name": "one-pesewa-client",
   "version": "0.0.0",
+  "main": "app.js",
   "scripts": {
     "ng": "ng",
     "start-dev": "ng serve",
+    "start-desktop-app": "ng build --base-href ./ && electron .",
     "start": "node server.js",
     "build": "ng build",
     "lint": "ng lint",
