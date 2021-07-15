@@ -9,7 +9,7 @@ export class AppComponent implements OnInit  {
 	title = 'one-pesewa-client';
 
 	ngOnInit() {
-		this.inactivityTime();
+		//this.inactivityTime();
 	}
 
 
