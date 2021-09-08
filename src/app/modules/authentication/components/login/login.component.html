@@ -3,7 +3,7 @@
 
 <div class="container" [ngClass]="{'right-panel-active': enableSignUpForm}"  style="margin-top: 10px;">
 	<div class="form-container sign-up-container">
-		<form action="#">
+		<form #signupForm="ngForm" (ngSubmit)="signupForm.form.valid && onSubmit('signupForm')">
 			<h2>Create Account</h2>
 			<!-- <div class="social-container">
 				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -11,27 +11,68 @@
 				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
 			</div>
 			<span>or use your email for registration</span> -->
-			<input type="text" placeholder="Name" />
-			<input type="email" placeholder="Email" />
-			<input type="password" placeholder="Password" />
-			<input type="password" placeholder="Confirm Password" />
+			<input type="text" 
+					placeholder="Full Name"
+					#name="ngModel"
+					[(ngModel)]="signUpModel.name"
+					id="name"
+					name="name"
+					required />
+			<div *ngIf="signupForm.submitted && !name.valid" style="color: #a94442;">Full name is required</div>
+			<input type="email" 
+					placeholder="Email"
+					#email="ngModel"
+					[(ngModel)]="signUpModel.email"
+					id="email"
+					name="email"
+					required />
+			<div *ngIf="signupForm.submitted && !email.valid" style="color: #a94442;">Full name is required</div>
+			<input type="password" 
+					placeholder="Password"
+					#password="ngModel"
+					[(ngModel)]="signUpModel.password"
+					id="password"
+					name="password"
+					required />
+			<div *ngIf="signupForm.submitted && !password.valid" style="color: #a94442;">Full name is required</div>
+			<input type="password" 
+					placeholder="Confirm Password"
+					#confirmPassword="ngModel"
+					[(ngModel)]="signUpModel.confirmPassword"
+					id="confirmPassword"
+					name="confirmPassword"
+					required />
+			<div class="text-left" *ngIf="signupForm.submitted && !confirmPassword.valid" style="color: #a94442;">Full name is required</div>
 			<br />
-			<button type="button" [routerLink]="['/client-portal']">Sign Up</button>
+			<button type="submit">Sign Up</button>
 		</form>
 	</div>
 	<div class="form-container sign-in-container">
-		<form action="#">
+		<form #loginForm="ngForm" (ngSubmit)="loginForm.form.valid && onSubmit('loginForm')">
 			<h2>Sign in</h2>
+			<div *ngIf="loginForm.submitted && !email.valid" style="color: #a94442;">Email is required</div>
 			<!-- <div class="social-container">
 				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
 				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
 				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
 			</div>
 			<span>or use your account</span> -->
-			<input type="email" placeholder="Email" />
-			<input type="password" placeholder="Password" />
+			<input type="email" 
+					placeholder="Email"
+					#email="ngModel"
+					[(ngModel)]="loginModel.email"
+					id="email"
+					name="email"
+					required />
+			<input type="password" 
+					placeholder="Password"
+					#password="ngModel"
+					[(ngModel)]="loginModel.password"
+					id="password"
+					name="password"
+					required />
 			<a href="#">Forgot your password?</a>
-			<button type="button" [routerLink]="['/client-portal']">Sign In</button>
+			<button type="submit" >Sign In</button>
 		</form>
 	</div>
 	<div class="overlay-container">

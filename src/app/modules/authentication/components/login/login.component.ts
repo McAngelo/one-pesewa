@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class LoginComponent implements OnInit {
 
 	public enableSignUpForm: boolean;
+	public signUpModel: any = {};
+	public loginModel: any = {};
 
 	constructor() {
 	}
@@ -24,6 +26,14 @@ export class LoginComponent implements OnInit {
 
 		if(enableForm === 'signUp'){
 			this.enableSignUpForm = true;
+		}
+	}
+
+	public onSubmit(formType: string): void {
+		if(formType === 'signupForm'){
+			console.log(formType, this.signUpModel);
+		}else{
+			console.log(formType, this.loginModel);
 		}
 	}
 
