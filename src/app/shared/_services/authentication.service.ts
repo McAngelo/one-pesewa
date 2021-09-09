@@ -15,7 +15,7 @@ export class AuthenticationService {
 	private _apiUrl: string = environment._apiEndpoint;
 
 	constructor(private _http: HttpClient){
-		this._currentUserSubject = new BehaviorSubject<User>(JSON.parse(sessionStorage.getItme('currentUser')));
+		this._currentUserSubject = new BehaviorSubject<User>(JSON.parse(sessionStorage.getItem('currentUser')));
 		this.currentUser =  this._currentUserSubject.asObservable();
 	}
 

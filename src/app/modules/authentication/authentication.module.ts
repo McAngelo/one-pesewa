@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { 
 	LoginComponent, 
 	ForgottenPasswordComponent,
@@ -23,6 +23,7 @@ import { AuthenticationRoutingModule } from './authentication-routing.module';
 	imports: [
 		CommonModule,
 		FormsModule,
+		ReactiveFormsModule,
 		AuthenticationRoutingModule
 	]
 })
