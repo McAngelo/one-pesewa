@@ -14,7 +14,7 @@ export class LoginComponent implements OnInit {
 	public loginForm: FormGroup;
 	public loading: boolean = false;
 	public submitted: boolean = false;
-	public returnnUrl: string;
+	public returnUrl: string;
 	public error: string;
 
 	public enableSignUpForm: boolean;
@@ -39,7 +39,7 @@ export class LoginComponent implements OnInit {
 		});
 
 		// get return url from route parameters or default to '/'
-		this.returnnUrl = this._route.snapshot.queryParams['returnUrl'] || '/';
+		this.returnUrl = this._route.snapshot.queryParams['returnUrl'] || '/';
 	}
 
 	// convenience getter for easy access to form fields
@@ -59,9 +59,38 @@ export class LoginComponent implements OnInit {
 	public onSubmit(formType: string): void {
 		if(formType === 'signupForm'){
 			console.log(formType, this.signUpModel);
+			this.processSignUp();
 		}else{
 			console.log(formType, this.loginModel);
+			this.processLogin();
 		}
+	}
+
+	public processLogin(): void {
+		console.log('processing login');
+		this.submitted = true;
+
+		// stop here if form is invalid
+		if(this.loginForm.invalid){
+			return;
+		}
+
+		this.loading = true;
+		this._authenticationService.login(this.f.email.value, this.f.password.value)
+			.pipe(first())
+			.subscribe(
+				data => {
+					this._router.navigate([this.returnUrl]);
+				},
+				error => {
+					this.error = error;
+					this.loading = false;
+				}
+			);
+	}
+
+	public processSignUp(): void {
+		console.log('working on the registration');
 	}
 
 }
